@@ -1,0 +1,150 @@
+body {
+    font-family: 'Helvetica';
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    width: 600px;
+    height: 130px;
+    margin: 20px auto 0 auto;
+    background: linear-gradient(to right, #283048, #859398);
+}
+
+.header-title {
+    font-size: 25px;
+    padding-top: 10px;
+    text-align: center;
+    color: white;
+}
+
+.header-form {
+    text-align: center;
+}
+
+.header-input {
+    width: 200px;
+    height: 25px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+.header-input::placeholder {
+    padding-left: 5px;
+}
+.header-btn {
+    width: 50px;
+    height: 27px;
+    border-radius: 5px;
+    border: none;
+    background-color: #fff;
+    padding: 3px;
+    cursor: pointer;
+    transition:background 0.3s linear ;
+
+}
+
+.header-btn:hover {
+    background: #a4afb3;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    height: 300px;
+    margin: 50px auto;
+
+    box-shadow: 0 5px 20px #808e942b;
+}
+
+.card {
+    position: relative;
+    width: 250px;
+    height: 200px;
+    box-shadow: 0 5px 20px #ccc;
+    background: white;
+    border-radius: 10px;
+}
+
+.card::before {
+    content: '';
+    position: absolute;
+    left: 5px;
+    width: 240px;
+    height: 210px;
+    z-index: -1;
+    box-shadow: 0 5px 20px #ccc;
+
+    border-radius: 10px;
+}
+
+.card-city {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.card-country {
+    text-align: center;
+    display: block;
+    font-size: 13px;
+   margin-bottom: 20px;
+}
+
+.card-weather {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.card-temperature {
+    font-size: 25px;
+    margin: 0;
+}
+
+.feelslike {
+    text-align: center;
+}
+
+.card-description {
+    font-size: 25px;
+}
+
+
+
+.spinner {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.spinner-animation {
+    display: inline-block;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    border-top: 3px solid rgba(0, 0, 0, 0.1);
+    border-right: 3px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 3px solid rgba(0, 0, 0, 0.1);
+    border-left: 3px solid rgb(137, 149, 162);
+    animation: loading-spinner 2s infinite linear;
+}
+
+
+.spinner-text {
+    display: block;
+    margin-top: 5px;
+    color: rgb(137, 149, 162);
+    font-size: 18px;
+}
+
+
+@keyframes loading-spinner {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
